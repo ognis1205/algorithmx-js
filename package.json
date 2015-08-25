@@ -1,0 +1,16 @@
+{
+    "name": "algorithmx-js",
+    "version": "0.1.0",
+    "description": "Generalized Knuth's Algorithm X library",
+    "main": "src/algorithmx.js",
+    "repository": {
+	"type": "git",
+	"url": "git@github.com:shingoOKAWA/algorithmx-js.git"
+    },
+    "keywords": [
+	"javascript",
+	"library"
+    ],
+    "author": "Shingo OKAWA",
+    "license": "none",
+}
