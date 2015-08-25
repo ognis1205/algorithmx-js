@@ -335,14 +335,14 @@
 
     // Exports modules.
     try {
-	window.Matrix = Matrix;
-	window.Constraint = Constraint;
-	window.Configuration = Configuration;
+	window.Matrix               = Matrix;
+	window.Matrix.Constraint    = Constraint;
+	window.Matrix.Configuration = Configuration;
     } catch (e) {}
 
     try {
-	module.exports = Matrix;
-	module.exports.Constraint = Constraint;
+	module.exports               = Matrix;
+	module.exports.Constraint    = Constraint;
 	module.exports.Configuration = Configuration;
     } catch (e) {}
 })();
