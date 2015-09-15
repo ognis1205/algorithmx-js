@@ -1,17 +1,16 @@
-# Javascript Generalized Algorithm X Implementaion
+# Javascript Generalized Algorithm X Implementation
 
-This Knuth's Algorithm X implementation is generalized, i.e., all possible
-constraints problems can be solved with this library with a little additive
-implementation on your own.
+With this generic Knuth's Algorithm X implementation, all possible
+constraint problems can be solved by implementing complementaary
+snipetts.
 
 ## Usage
 
 Consider a exact cover problem, s.t., given a tiles, you must cover a floor
-exactly. And now you will try this problem with this module.
+without any margin. And now you will try this problem with this module.
 
 First, you must "require" modules:
 
-    var Utils = require('./utils');
     var Matrix = require('./matrix');
     var Constraint = Matrix.Constraint;
     var Configuration = Matrix.Configuration;
@@ -46,8 +45,8 @@ and define block and floor, i.e., problem classes:
         this.setup();
     };
 
-Second, you must bind each block configurations with satisfiable constraints, so
-code it:
+Second, you must bind each block configurations with corresponding satisfiable
+constraints:
 
     // Initializes the problem.
     Problem.prototype.setup = function setup() {
